@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-style: 36px;
+  text-transform: uppercase;
+  color: #7a7676;
+  text-align: center;
+  margin: 30px;
+}
+
+.container .photo {
+  float: left;
+  width: 33.3333%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .photo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  padding: 10px;
+  background: #eee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container .photo a {
+  position: relative;
+}
+
+.container .photo a:hover {
+  display: block;
+  opacity: 0.5;
+}
+
+.container .photo a:after {
+  content: '';
+  background: transparent url("../../img/icons/eye-icon.png") no-repeat center;
+  width: 52px;
+  height: 35px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  visibility: hidden;
+}
+
+.container .photo:hover a:after {
+  visibility: visible;
+}
+
+.container .photo figcaption {
+  color: #7a7676;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container #gallary {
+  margin-bottom: 50px;
+}
+
+.container #gallary:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
